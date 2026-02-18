@@ -1,0 +1,19 @@
+2026, Feb 17
+Key:
+  1.Sort
+  2.Outer loop: 
+    For loop traverse: for a specifical value, find the other two values that get the closest sum to target
+  3.Inner loop: 
+    While loop traverse values after the specifical value.
+    Since the array is sorted, the sum of the lowest and the highest value must be the farthest from the target, then traverse all value between them, we can get the closest sum.
+    The advantage of setting lo and hi, traversing from two sides toward to middle reduce one loop, which simplifies the time compexity.
+
+nums.sort( ):
+  Sorting to ensure when the index move from left to right, the elements getting larger.
+
+Why sorting?
+  Words like "closest" or "equal to" indicate that the return result is related to the order of array.
+
+Two variables:
+  1. sum_clst: be used to save the closest sum during the process of comparation
+  2. dif_clst: be used to save the absolute value during the process of comparation, which means the distance from the target valur given by description 
