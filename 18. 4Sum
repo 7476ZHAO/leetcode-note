@@ -2,7 +2,7 @@ key:
   way to reduce the comparation time
     1. to reduce the time of comparation, sorting needed.
     2. when the min sum more than target, means all quadraplets greater than target, break, no such quadraplets exist
-    3. when the max sum less than target, means all quadraplets in the current loop less than target, continue. This step reduce the comparation time a lot.
+    *3.(extremly important)when the max sum less than target, means all quadraplets in the current loop less than target, continue. This step reduce the comparation time a lot.
   ways to make sure the quadraplet unique
     in every loop, make sure nums[i] != nums[i-1], if not, skip current i. and j, lo, hi also need to check.
   
